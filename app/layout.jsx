@@ -3,6 +3,7 @@ import "@/styles/global.css";
 import "@/styles/variable.css";
 
 import { mainFont } from "@/libs/font";
+import { Footer } from "@/components/footer";
 
 export const metadata = {
   title: "AI Project",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={mainFont.className}>
       <body className="layout">
         {children}
+        <Footer />
         <div className="overlay" />
       </body>
     </html>
