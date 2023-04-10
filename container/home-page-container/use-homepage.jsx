@@ -34,7 +34,6 @@ export const HomepageContextProvider = ({ children }) => {
       if (!response.ok) throw new Error(response.statusText ?? response.status);
 
       const generatedImage = await response.json();
-
       setError(null);
       setResultPrompt(prompt);
       setImage(generatedImage);
